@@ -1,0 +1,118 @@
+.asideBar {
+  width: 210px;
+  min-height: 100%;
+  position: fixed;
+  z-index: 1;
+  /* top: 20px; */
+  left: 0px;
+  background: #eee;
+  overflow-x: hidden;
+  padding: 5px;
+}
+
+.text1 {
+  background-image: url('./Components/images/Screenshot1.png');
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.text2 {
+  background-image: url('./Components/images/Screenshot\ 2021-05-03\ 164225.png');
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.text3 {
+  background-image: url('./Components/images/Screenshot\ 2021-05-03\ 164248.png');
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.text4 {
+  background-image: url('./Components/images/Screenshot\ 2021-05-03\ 164306.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+main {
+  margin-left: 240px;
+}
+.grid {
+  display: grid;
+  grid-gap: 5px;
+  gap: 5px;
+  grid-template-columns: 100px 100px;
+  /* grid-template-columns: repeat(auto-fill, minmax(200px, auto)); */
+  grid-auto-rows: minmax(50px, auto);
+}
+
+.grid button {
+  background-color: antiquewhite;
+  padding-left: 3px;
+  padding-right: 3px;
+  cursor: pointer;
+  background-color: aliceblue;
+  border: none;
+  outline: none;
+  font-size: larger;
+}
+
+@media screen and (max-width: 700px) {
+  .asideBar {
+    width: 180px;
+    min-height: 100%;
+  }
+  .grid {
+    grid-gap: 5px;
+    gap: 5px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, auto));
+    padding: 8px 0;
+  }
+  main #canvas {
+    background: rgba(255, 255, 255, 0.25) !important;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37) !important;
+    backdrop-filter: blur(4px) !important;
+    -webkit-backdrop-filter: blur(4px) !important;
+    border-radius: 10px !important;
+    border: 1px solid rgba(255, 255, 255, 0.18) !important;
+    margin-left: 195px;
+  }
+}
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
