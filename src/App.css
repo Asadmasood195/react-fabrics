@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 .asideBar {
   width: 210px;
   min-height: 100%;
@@ -11,29 +13,67 @@
 }
 
 .text1 {
-  background-image: url('./Components/images/Screenshot1.png');
+  background-image: url('./Components/images/Text1.png');
 
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 
 .text2 {
-  background-image: url('./Components/images/Screenshot\ 2021-05-03\ 164225.png');
+  background-image: url('./Components/images/Text2.png');
 
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .text3 {
-  background-image: url('./Components/images/Screenshot\ 2021-05-03\ 164248.png');
+  background-image: url('./Components/images/Text3.png');
 
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
 .text4 {
-  background-image: url('./Components/images/Screenshot\ 2021-05-03\ 164306.png');
+  /* background-image: url('./Components/images/Screenshot\ 2021-05-03\ 164306.png'); */
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
+
+/* input[type='text'] {
+  display: block;
+  width: 200px;
+  height: 30px;
+  padding: 0 8px;
+  border-radius: 10px;
+  border: 3px solid black;
+} */
+
+input[type='text'] {
+  border-radius: 10px;
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: 3px solid transparent;
+  background-image: linear-gradient(white, white),
+    linear-gradient(
+      315deg,
+      rgb(236, 160, 255),
+      rgb(170, 178, 255),
+      rgb(132, 255, 201)
+    );
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+  animation: bg-hue 2s linear infinite;
+}
+
+/* @keyframes for the gradient animation */
+@keyframes bg-hue {
+  0% {
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
 main {
   margin-left: 240px;
 }
