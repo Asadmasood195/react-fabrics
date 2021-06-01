@@ -1,0 +1,17 @@
+/* .display_body {
+  background-image: url('./images/download.png');
+} */
+
+body {
+  font-size: 18px;
+}
+p {
+  padding-bottom: 20px;
+}
+canvas {
+  border: 1px solid black;
+}
+
+td {
+  padding: 0 20px;
+}
